@@ -1,6 +1,6 @@
 ﻿namespace WindowsFormsApp1
 {
-    partial class MainForm
+    partial class FormAdministrasi
     {
         /// <summary>
         /// Required designer variable.
@@ -36,63 +36,57 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(35, 26);
+            this.button1.Location = new System.Drawing.Point(22, 24);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "User";
+            this.button1.Text = "Anggota";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(149, 26);
+            this.button2.Location = new System.Drawing.Point(117, 24);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.Size = new System.Drawing.Size(81, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Administrasi";
+            this.button2.Text = "Unit Kerja";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(35, 67);
+            this.button3.Location = new System.Drawing.Point(22, 66);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(189, 23);
+            this.button3.Size = new System.Drawing.Size(75, 23);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Transaksi Penjualan Umum";
+            this.button3.Text = "Barang";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(35, 108);
+            this.button4.Location = new System.Drawing.Point(117, 66);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(189, 23);
+            this.button4.Size = new System.Drawing.Size(81, 23);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Transaksi Penjualan Anggota";
+            this.button4.Text = "Jenis Barang";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // MainForm
+            // FormAdministrasi
             // 
-            this.ClientSize = new System.Drawing.Size(260, 160);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(220, 112);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "MainForm";
-            this.Text = "Main Form";
+            this.Name = "FormAdministrasi";
+            this.Text = "FormAdministrasi";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonUser;
-        private System.Windows.Forms.Button buttonAdministrasi;
-        private System.Windows.Forms.Button buttonTPUmum;
-        private System.Windows.Forms.Button buttonTPAnggota;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;

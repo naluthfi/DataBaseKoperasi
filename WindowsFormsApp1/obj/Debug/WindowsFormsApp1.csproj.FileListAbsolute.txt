@@ -10,3 +10,7 @@ C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Windows
 C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
 C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
 C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
+C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormAdministrasi.resources
+C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormUbahPassword.resources
+C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormUser.resources
+C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.MainForm.resources

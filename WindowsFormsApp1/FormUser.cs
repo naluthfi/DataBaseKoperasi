@@ -7,22 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Npgsql;
 
 namespace WindowsFormsApp1
 {
-    public partial class MainForm : Form
+    public partial class FormUser : Form
     {
-        public MainForm()
+        public FormUser()
         {
             InitializeComponent();
         }
-        
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormUser fu = new FormUser();
-            fu.Show();
+            FormUbahPassword fup = new FormUbahPassword();
+            fup.Show();
             this.Hide();
         }
 
@@ -30,20 +28,6 @@ namespace WindowsFormsApp1
         {
             FormAdministrasi fa = new FormAdministrasi();
             fa.Show();
-            this.Hide();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            FormTPUmum ftpu = new FormTPUmum();
-            ftpu.Show();
-            this.Hide();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            FormTPAnggota ftpa = new FormTPAnggota();
-            ftpa.Show();
             this.Hide();
         }
     }

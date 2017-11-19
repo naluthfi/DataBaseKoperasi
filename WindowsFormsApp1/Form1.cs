@@ -17,11 +17,6 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-            
-        }
         private void button1_Click(object sender, EventArgs e)
         {
             string connstring = "Server=127.0.0.1; Port=5432; User Id=postgres; Password=hahaha; Database=Koperasi;";
@@ -36,6 +31,9 @@ namespace WindowsFormsApp1
             if (dt.Rows.Count > 0)
             {
                 MessageBox.Show("Login berhasil.");
+                MainForm mf = new MainForm();
+                mf.Show();
+                Hide();
             }
             else
             {

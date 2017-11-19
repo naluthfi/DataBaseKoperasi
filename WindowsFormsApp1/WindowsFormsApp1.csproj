@@ -54,15 +54,99 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormAdministrasi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdministrasi.Designer.cs">
+      <DependentUpon>FormAdministrasi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataAnggota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataAnggota.Designer.cs">
+      <DependentUpon>FormDataAnggota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDataBarang.Designer.cs">
+      <DependentUpon>FormDataBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormJenisBarang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormJenisBarang.Designer.cs">
+      <DependentUpon>FormJenisBarang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPembayaranAnggota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPembayaranAnggota.Designer.cs">
+      <DependentUpon>FormPembayaranAnggota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPengguna.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPengguna.Designer.cs">
+      <DependentUpon>FormPengguna.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTPAnggota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTPAnggota.Designer.cs">
+      <DependentUpon>FormTPAnggota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTPUmum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTPUmum.Designer.cs">
+      <DependentUpon>FormTPUmum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUbahPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUbahPassword.Designer.cs">
+      <DependentUpon>FormUbahPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUnitKerja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUnitKerja.Designer.cs">
+      <DependentUpon>FormUnitKerja.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUser.Designer.cs">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="KoperasiDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>KoperasiDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAdministrasi.resx">
+      <DependentUpon>FormAdministrasi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUbahPassword.resx">
+      <DependentUpon>FormUbahPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUser.resx">
+      <DependentUpon>FormUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
