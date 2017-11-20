@@ -23,20 +23,20 @@ namespace WindowsFormsApp1
         {
             FormUser fu = new FormUser();
             fu.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             FormAdministrasi fa = new FormAdministrasi();
             fa.Show();
-            this.Hide();
+            this.Close();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             FormTPUmum ftpu = new FormTPUmum();
-            ftpu.Show();
+            ftpu.Close();
             this.Hide();
         }
 
@@ -44,7 +44,7 @@ namespace WindowsFormsApp1
         {
             FormTPAnggota ftpa = new FormTPAnggota();
             ftpa.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

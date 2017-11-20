@@ -48,6 +48,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataSetPengguna.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetPengguna.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -125,6 +130,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>KoperasiDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="KoperasiDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KoperasiDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KoperasiDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KoperasiDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KoperasiDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KoperasiDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="KoperasiDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>KoperasiDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,8 +164,23 @@
     <EmbeddedResource Include="FormAdministrasi.resx">
       <DependentUpon>FormAdministrasi.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormDataAnggota.resx">
+      <DependentUpon>FormDataAnggota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataBarang.resx">
+      <DependentUpon>FormDataBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormJenisBarang.resx">
+      <DependentUpon>FormJenisBarang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPengguna.resx">
+      <DependentUpon>FormPengguna.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormUbahPassword.resx">
       <DependentUpon>FormUbahPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUnitKerja.resx">
+      <DependentUpon>FormUnitKerja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormUser.resx">
       <DependentUpon>FormUser.cs</DependentUpon>
@@ -157,6 +197,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="DataSetPengguna.xsc">
+      <DependentUpon>DataSetPengguna.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetPengguna.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetPengguna.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSetPengguna.xss">
+      <DependentUpon>DataSetPengguna.xsd</DependentUpon>
+    </None>
     <None Include="KoperasiDataSet.xsc">
       <DependentUpon>KoperasiDataSet.xsd</DependentUpon>
     </None>
@@ -167,6 +218,50 @@
     </None>
     <None Include="KoperasiDataSet.xss">
       <DependentUpon>KoperasiDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="KoperasiDataSet1.xsc">
+      <DependentUpon>KoperasiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KoperasiDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KoperasiDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KoperasiDataSet1.xss">
+      <DependentUpon>KoperasiDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="KoperasiDataSet2.xsc">
+      <DependentUpon>KoperasiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KoperasiDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KoperasiDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KoperasiDataSet2.xss">
+      <DependentUpon>KoperasiDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="KoperasiDataSet3.xsc">
+      <DependentUpon>KoperasiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KoperasiDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KoperasiDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KoperasiDataSet3.xss">
+      <DependentUpon>KoperasiDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="KoperasiDataSet4.xsc">
+      <DependentUpon>KoperasiDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="KoperasiDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>KoperasiDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="KoperasiDataSet4.xss">
+      <DependentUpon>KoperasiDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

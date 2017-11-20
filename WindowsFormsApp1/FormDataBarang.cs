@@ -16,5 +16,21 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void FormDataBarang_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'koperasiDataSet4.barang' table. You can move, or remove it, as needed.
+            this.barangTableAdapter1.Fill(this.koperasiDataSet4.barang);
+            // TODO: This line of code loads data into the 'koperasiDataSet3.barang' table. You can move, or remove it, as needed.
+            this.barangTableAdapter.Fill(this.koperasiDataSet3.barang);
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormAdministrasi fa = new FormAdministrasi();
+            fa.Show();
+        }
     }
 }

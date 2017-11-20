@@ -56,11 +56,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(177, 108);
+            this.ClientSize = new System.Drawing.Size(186, 108);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "FormUser";
-            this.Text = "FormUser";
+            this.Text = "Form User";
             this.ResumeLayout(false);
 
         }
