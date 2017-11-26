@@ -27,8 +27,16 @@ public partial class FormUbahPassword : Form
                 string username = textBox3.Text;
                 string passwordlama = textBox1.Text;
                 string passwordbaru = textBox2.Text;
-            //                NpgsqlCommand cmd = new NpgsqlCommand("UPDATE public.pengguna " + " SET (pass_login='" + textBox2.Text + "') " + " WHERE nm_login='" + textBox3.Text + "' AND pass_login='" + textBox1.Text + "'", connection);
-            NpgsqlCommand cmd = new NpgsqlCommand("select nm_login,pass_login from pengguna where nm_login='" + textBox3.Text + "'and pass_login='" + textBox1.Text + "'", connection);
+            NpgsqlCommand cmd = new NpgsqlCommand("UPDATE public.pengguna " + " SET pass_login='" + textBox2.Text + "' " + " WHERE nm_login='" + textBox3.Text + "' AND pass_login='" + textBox1.Text + "'", connection);
+            int success = cmd.ExecuteNonQuery();
+            if (Convert.ToBoolean(success))
+            {
+                MessageBox.Show("Password berhasil diperbarui");
+            } else
+            {
+                MessageBox.Show("Penggantian password gagal. Silahkan cek kembali nama login dan password anda.");
+            }
+            /* NpgsqlCommand cmd = new NpgsqlCommand("select nm_login,pass_login from pengguna where nm_login='" + textBox3.Text + "'and pass_login='" + textBox1.Text + "'", connection);
             NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -40,8 +48,8 @@ public partial class FormUbahPassword : Form
             }
             else
             {
-                MessageBox.Show("Ganti Gagal. Silahkan cek kembali nama login dan password anda.");
-            }
+                MessageBox.Show("Penggantian password gagal. Silahkan cek kembali nama login dan password anda.");
+            } */
             connection.Close();
         }
 

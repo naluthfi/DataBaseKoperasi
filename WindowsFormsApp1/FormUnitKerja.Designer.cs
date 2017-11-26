@@ -34,19 +34,19 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.koperasiDataSet1 = new WindowsFormsApp1.KoperasiDataSet1();
-            this.unitkerjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.unit_kerjaTableAdapter = new WindowsFormsApp1.KoperasiDataSet1TableAdapters.unit_kerjaTableAdapter();
             this.kdunitkerjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.unitkerjaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitkerjaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.koperasiDataSet1 = new WindowsFormsApp1.KoperasiDataSet1();
+            this.unit_kerjaTableAdapter = new WindowsFormsApp1.KoperasiDataSet1TableAdapters.unit_kerjaTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.koperasiDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitkerjaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.koperasiDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -83,6 +83,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -91,34 +93,37 @@
             this.dataGridView1.DataSource = this.unitkerjaBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(24, 74);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(240, 126);
             this.dataGridView1.TabIndex = 4;
-            // 
-            // koperasiDataSet1
-            // 
-            this.koperasiDataSet1.DataSetName = "KoperasiDataSet1";
-            this.koperasiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // unitkerjaBindingSource
-            // 
-            this.unitkerjaBindingSource.DataMember = "unit_kerja";
-            this.unitkerjaBindingSource.DataSource = this.koperasiDataSet1;
-            // 
-            // unit_kerjaTableAdapter
-            // 
-            this.unit_kerjaTableAdapter.ClearBeforeFill = true;
             // 
             // kdunitkerjaDataGridViewTextBoxColumn
             // 
             this.kdunitkerjaDataGridViewTextBoxColumn.DataPropertyName = "kd_unit_kerja";
             this.kdunitkerjaDataGridViewTextBoxColumn.HeaderText = "kd_unit_kerja";
             this.kdunitkerjaDataGridViewTextBoxColumn.Name = "kdunitkerjaDataGridViewTextBoxColumn";
+            this.kdunitkerjaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // unitkerjaDataGridViewTextBoxColumn
             // 
             this.unitkerjaDataGridViewTextBoxColumn.DataPropertyName = "unit_kerja";
             this.unitkerjaDataGridViewTextBoxColumn.HeaderText = "unit_kerja";
             this.unitkerjaDataGridViewTextBoxColumn.Name = "unitkerjaDataGridViewTextBoxColumn";
+            this.unitkerjaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // unitkerjaBindingSource
+            // 
+            this.unitkerjaBindingSource.DataMember = "unit_kerja";
+            this.unitkerjaBindingSource.DataSource = this.koperasiDataSet1;
+            // 
+            // koperasiDataSet1
+            // 
+            this.koperasiDataSet1.DataSetName = "KoperasiDataSet1";
+            this.koperasiDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // unit_kerjaTableAdapter
+            // 
+            this.unit_kerjaTableAdapter.ClearBeforeFill = true;
             // 
             // button1
             // 
@@ -185,8 +190,8 @@
             this.Text = "Form Unit Kerja";
             this.Load += new System.EventHandler(this.FormUnitKerja_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.koperasiDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.unitkerjaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.koperasiDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

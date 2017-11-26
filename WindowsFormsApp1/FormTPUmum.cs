@@ -16,5 +16,25 @@ namespace WindowsFormsApp1
         {
             InitializeComponent();
         }
+
+        private void FormTPUmum_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'koperasiDataSet6.barang' table. You can move, or remove it, as needed.
+            this.barangTableAdapter.Fill(this.koperasiDataSet6.barang);
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.barangTableAdapter.FillBy(this.koperasiDataSet6.barang);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
+
+        }
     }
 }

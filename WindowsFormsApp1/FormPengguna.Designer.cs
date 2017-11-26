@@ -201,6 +201,8 @@
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -212,6 +214,7 @@
             this.dataGridView1.DataSource = this.penggunaBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(19, 131);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(418, 134);
             this.dataGridView1.TabIndex = 15;
             // 
@@ -220,30 +223,35 @@
             this.kdpenggunaDataGridViewTextBoxColumn.DataPropertyName = "kd_pengguna";
             this.kdpenggunaDataGridViewTextBoxColumn.HeaderText = "kd_pengguna";
             this.kdpenggunaDataGridViewTextBoxColumn.Name = "kdpenggunaDataGridViewTextBoxColumn";
+            this.kdpenggunaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nmpenggunaDataGridViewTextBoxColumn
             // 
             this.nmpenggunaDataGridViewTextBoxColumn.DataPropertyName = "nm_pengguna";
             this.nmpenggunaDataGridViewTextBoxColumn.HeaderText = "nm_pengguna";
             this.nmpenggunaDataGridViewTextBoxColumn.Name = "nmpenggunaDataGridViewTextBoxColumn";
+            this.nmpenggunaDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // nmloginDataGridViewTextBoxColumn
             // 
             this.nmloginDataGridViewTextBoxColumn.DataPropertyName = "nm_login";
             this.nmloginDataGridViewTextBoxColumn.HeaderText = "nm_login";
             this.nmloginDataGridViewTextBoxColumn.Name = "nmloginDataGridViewTextBoxColumn";
+            this.nmloginDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // passloginDataGridViewTextBoxColumn
             // 
             this.passloginDataGridViewTextBoxColumn.DataPropertyName = "pass_login";
             this.passloginDataGridViewTextBoxColumn.HeaderText = "pass_login";
             this.passloginDataGridViewTextBoxColumn.Name = "passloginDataGridViewTextBoxColumn";
+            this.passloginDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // levelDataGridViewTextBoxColumn
             // 
             this.levelDataGridViewTextBoxColumn.DataPropertyName = "level";
             this.levelDataGridViewTextBoxColumn.HeaderText = "level";
             this.levelDataGridViewTextBoxColumn.Name = "levelDataGridViewTextBoxColumn";
+            this.levelDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // penggunaBindingSource
             // 

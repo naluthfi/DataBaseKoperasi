@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="KoperasiDataSet6" targetNamespace="http://tempuri.org/KoperasiDataSet6.xsd" xmlns:mstns="http://tempuri.org/KoperasiDataSet6.xsd" xmlns="http://tempuri.org/KoperasiDataSet6.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="LoginDataset" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="LoginDataset (Settings)" PropertyReference="ApplicationSettings.WindowsFormsApp1.Properties.Settings.GlobalReference.Default.LoginDataset" Provider="Npgsql" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="barangTableAdapter" GeneratorDataComponentClassName="barangTableAdapter" Name="barang" UserDataComponentName="barangTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="LoginDataset (Settings)" DbObjectName="Koperasi.&quot;public&quot;.barang" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "kd_barang", "nm_barang", "hrg_jual" FROM "public"."barang"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="kd_barang" DataSetColumn="kd_barang" />
+              <Mapping SourceColumn="nm_barang" DataSetColumn="nm_barang" />
+              <Mapping SourceColumn="hrg_jual" DataSetColumn="hrg_jual" />
+            </Mappings>
+            <Sources>
+              <DbSource ConnectionRef="LoginDataset (Settings)" DbObjectName="Koperasi.&quot;public&quot;.barang" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="FillBy" GenerateMethods="Fill" GenerateShortCommands="true" GeneratorSourceName="FillBy" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetDataBy" UserSourceName="FillBy">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "kd_barang", "nm_barang", "hrg_jual" FROM "public"."barang"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </Sources>
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="KoperasiDataSet6" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="KoperasiDataSet6" msprop:Generator_UserDSName="KoperasiDataSet6">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="barang" msprop:Generator_TableClassName="barangDataTable" msprop:Generator_TableVarName="tablebarang" msprop:Generator_RowChangedName="barangRowChanged" msprop:Generator_TablePropName="barang" msprop:Generator_RowDeletingName="barangRowDeleting" msprop:Generator_RowChangingName="barangRowChanging" msprop:Generator_RowEvHandlerName="barangRowChangeEventHandler" msprop:Generator_RowDeletedName="barangRowDeleted" msprop:Generator_RowClassName="barangRow" msprop:Generator_UserTableName="barang" msprop:Generator_RowEvArgName="barangRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="kd_barang" msprop:Generator_ColumnVarNameInTable="columnkd_barang" msprop:Generator_ColumnPropNameInRow="kd_barang" msprop:Generator_ColumnPropNameInTable="kd_barangColumn" msprop:Generator_UserColumnName="kd_barang">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="nm_barang" msprop:Generator_ColumnVarNameInTable="columnnm_barang" msprop:Generator_ColumnPropNameInRow="nm_barang" msprop:Generator_ColumnPropNameInTable="nm_barangColumn" msprop:Generator_UserColumnName="nm_barang">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="hrg_jual" msprop:Generator_ColumnVarNameInTable="columnhrg_jual" msprop:Generator_ColumnPropNameInRow="hrg_jual" msprop:Generator_ColumnPropNameInTable="hrg_jualColumn" msprop:Generator_UserColumnName="hrg_jual" type="xs:long" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:barang" />
+      <xs:field xpath="mstns:kd_barang" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

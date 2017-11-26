@@ -30,27 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.kdjenisbarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jenisbarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.jenisbarangBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.koperasiDataSet2 = new WindowsFormsApp1.KoperasiDataSet2();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.koperasiDataSet2 = new WindowsFormsApp1.KoperasiDataSet2();
-            this.jenisbarangBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.jenis_barangTableAdapter = new WindowsFormsApp1.KoperasiDataSet2TableAdapters.jenis_barangTableAdapter();
-            this.kdjenisbarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.jenisbarangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.koperasiDataSet2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.jenisbarangBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.koperasiDataSet2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -59,8 +61,33 @@
             this.dataGridView1.DataSource = this.jenisbarangBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(24, 89);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(240, 127);
             this.dataGridView1.TabIndex = 9;
+            // 
+            // kdjenisbarangDataGridViewTextBoxColumn
+            // 
+            this.kdjenisbarangDataGridViewTextBoxColumn.DataPropertyName = "kd_jenis_barang";
+            this.kdjenisbarangDataGridViewTextBoxColumn.HeaderText = "kd_jenis_barang";
+            this.kdjenisbarangDataGridViewTextBoxColumn.Name = "kdjenisbarangDataGridViewTextBoxColumn";
+            this.kdjenisbarangDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // jenisbarangDataGridViewTextBoxColumn
+            // 
+            this.jenisbarangDataGridViewTextBoxColumn.DataPropertyName = "jenis_barang";
+            this.jenisbarangDataGridViewTextBoxColumn.HeaderText = "jenis_barang";
+            this.jenisbarangDataGridViewTextBoxColumn.Name = "jenisbarangDataGridViewTextBoxColumn";
+            this.jenisbarangDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // jenisbarangBindingSource
+            // 
+            this.jenisbarangBindingSource.DataMember = "jenis_barang";
+            this.jenisbarangBindingSource.DataSource = this.koperasiDataSet2;
+            // 
+            // koperasiDataSet2
+            // 
+            this.koperasiDataSet2.DataSetName = "KoperasiDataSet2";
+            this.koperasiDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // textBox2
             // 
@@ -94,31 +121,9 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "Kode Jenis Barang";
             // 
-            // koperasiDataSet2
-            // 
-            this.koperasiDataSet2.DataSetName = "KoperasiDataSet2";
-            this.koperasiDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // jenisbarangBindingSource
-            // 
-            this.jenisbarangBindingSource.DataMember = "jenis_barang";
-            this.jenisbarangBindingSource.DataSource = this.koperasiDataSet2;
-            // 
             // jenis_barangTableAdapter
             // 
             this.jenis_barangTableAdapter.ClearBeforeFill = true;
-            // 
-            // kdjenisbarangDataGridViewTextBoxColumn
-            // 
-            this.kdjenisbarangDataGridViewTextBoxColumn.DataPropertyName = "kd_jenis_barang";
-            this.kdjenisbarangDataGridViewTextBoxColumn.HeaderText = "kd_jenis_barang";
-            this.kdjenisbarangDataGridViewTextBoxColumn.Name = "kdjenisbarangDataGridViewTextBoxColumn";
-            // 
-            // jenisbarangDataGridViewTextBoxColumn
-            // 
-            this.jenisbarangDataGridViewTextBoxColumn.DataPropertyName = "jenis_barang";
-            this.jenisbarangDataGridViewTextBoxColumn.HeaderText = "jenis_barang";
-            this.jenisbarangDataGridViewTextBoxColumn.Name = "jenisbarangDataGridViewTextBoxColumn";
             // 
             // button1
             // 
@@ -185,8 +190,8 @@
             this.Text = "FormJenisBarang";
             this.Load += new System.EventHandler(this.FormJenisBarang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.koperasiDataSet2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.jenisbarangBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.koperasiDataSet2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

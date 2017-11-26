@@ -19,3 +19,4 @@ C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\Windows
 C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormDataBarang.resources
 C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormJenisBarang.resources
 C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormUnitKerja.resources
+C:\Users\LUTHFI\source\repos\WindowsFormsApp1\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.FormTPUmum.resources

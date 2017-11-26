@@ -30,10 +30,10 @@ namespace WindowsFormsApp1
             da.Fill(dt);
             if (dt.Rows.Count > 0)
             {
-                this.Hide();
                 MessageBox.Show("Login berhasil.");
                 MainForm mf = new MainForm();
                 mf.Show();
+                this.Hide();
             }
             else
             {
